@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Florian Hein – Software-Prototypen für Unternehmen</title>
+  <meta name="description" content="Florian Hein baut Software-Prototypen für Unternehmen: aus einem Ablauf, der jede Woche Zeit frisst, wird in 2–6 Wochen etwas, das Ihr Team ausprobieren kann. Heilbronn.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#050608">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/instrument-sans-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="boot.js"></script>
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="top" data-anim="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="#top" aria-label="Florian Hein – zum Seitenanfang">
+        <span class="brand__mark" aria-hidden="true">FH</span>
+        <span class="brand__name">Florian Hein</span>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <ul role="list">
+          <li><a href="#arbeit">Was ich baue</a></li>
+          <li><a href="#projekte">Projekte</a></li>
+          <li><a href="#arbeitsweise">Arbeitsweise</a></li>
+        </ul>
+      </nav>
+      <div class="top__end">
+        <button class="theme" type="button" aria-label="Farbschema wechseln">
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7.25"/><path d="M10 2.75a7.25 7.25 0 0 1 0 14.5z"/></svg>
+        </button>
+        <a class="btn btn--small" href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__field" aria-hidden="true"></div>
+      <div class="hero__canvas" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <p class="meta hero__meta" data-anim="hero">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Selbstständig</span><span aria-hidden="true">·</span><span>Heilbronn</span><span class="hero__coords" aria-hidden="true">49.14° N — 9.22° E</span>
+        </p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span class="line__in">Software-Prototypen</span></span>
+          <span class="line"><span class="line__in"><em>für Unternehmen.</em></span></span>
+        </h1>
+        <div class="hero__body">
+          <p class="lead" data-anim="hero">Aus einer Idee oder einem Ablauf, der jede Woche Zeit frisst, wird in <span class="nowrap">2–6&nbsp;Wochen</span> etwas, das Ihr Team ausprobieren kann. Zum Festpreis, mit echten Tests und sauberem Betrieb.</p>
+          <p class="actions" data-anim="hero">
+            <a class="btn" href="https://final-portfolio-website-ten.vercel.app/de/#contact">Projekt anfragen<span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="https://github.com/Fluory">Alle Repos auf GitHub</a>
+          </p>
+        </div>
+        <dl class="facts" data-anim="hero">
+          <div><dt>Zeitraum</dt><dd>2–6 Wochen</dd></div>
+          <div><dt>Preis</dt><dd>Festpreis</dd></div>
+          <div><dt>Prinzip</dt><dd>Belegt, getestet</dd></div>
+        </dl>
+      </div>
+      <a class="hero__scroll meta" href="#arbeit" data-anim="hero">Weiter<span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="section" id="arbeit" aria-labelledby="arbeit-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="meta"><span class="meta__n">01</span> Was ich baue</p>
+          <h2 id="arbeit-title">Vier Türen. <em>Sie wählen nach Problem,</em> nicht nach Technik.</h2>
+        </header>
+        <ol class="doors" role="list">
+          <li class="door" data-reveal>
+            <a class="door__link" href="https://final-portfolio-website-ten.vercel.app/de/services/automation/">
+              <span class="door__n meta">A</span>
+              <h3 class="door__title">Arbeit automatisieren</h3>
+              <p class="door__quote">„Wir tippen jeden Tag dasselbe ab.“</p>
+              <p class="door__text">Excel-Listen zusammenkopieren, Berichte jede Woche neu bauen, Daten zwischen Tools übertragen: Solche Abläufe ersetze ich durch ein Skript oder einen Workflow, der zuverlässig läuft und dokumentiert ist.</p>
+              <span class="door__foot meta">3–8 Tage<span class="door__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+          <li class="door" data-reveal>
+            <a class="door__link" href="https://final-portfolio-website-ten.vercel.app/de/services/dashboards/">
+              <span class="door__n meta">B</span>
+              <h3 class="door__title">Zahlen sichtbar machen</h3>
+              <p class="door__quote">„Ich sehe erst am Monatsende, wo wir stehen.“</p>
+              <p class="door__text">Aus den Daten, die Sie schon haben, entsteht ein Dashboard mit den Kennzahlen, die für Ihre Entscheidungen zählen. Es aktualisiert sich selbst, statt jeden Monat neu gebaut zu werden.</p>
+              <span class="door__foot meta">1–3 Wochen<span class="door__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+          <li class="door" data-reveal>
+            <!-- Switch to /de/services/prototype/ once that page is deployed on the website. -->
+            <a class="door__link" href="https://final-portfolio-website-ten.vercel.app/de/#offer">
+              <span class="door__n meta">C</span>
+              <h3 class="door__title">Neues Produkt testen</h3>
+              <p class="door__quote">„Wir haben eine Idee für eine Plattform oder App.“</p>
+              <p class="door__text">Aus Ihrer Idee für eine Web-App, eine Plattform oder eine App entsteht ein Prototyp, den echte Nutzer ausprobieren können. So sehen Sie nach wenigen Wochen, ob die Idee trägt, bevor ein großes Budget fließt.</p>
+              <span class="door__foot meta">2–6 Wochen<span class="door__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+          <li class="door" data-reveal>
+            <!-- Switch to /de/services/website/ once that page is deployed on the website. -->
+            <a class="door__link" href="https://final-portfolio-website-ten.vercel.app/de/#offer">
+              <span class="door__n meta">D</span>
+              <h3 class="door__title">Website oder Shop</h3>
+              <p class="door__quote">„Unsere Seite ist alt“ oder „Wir wollen online verkaufen.“</p>
+              <p class="door__text">Eine schnelle, rechtssichere Website oder ein Shop mit Bezahlung, die Sie ohne Technikkenntnisse selbst pflegen. Gebaut auf Technik, die Sie nicht an mich bindet.</p>
+              <span class="door__foot meta">2–4 Wochen<span class="door__arrow" aria-hidden="true">→</span></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="projekte" aria-labelledby="projekte-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="meta"><span class="meta__n">02</span> Ausgewählte Projekte</p>
+          <h2 id="projekte-title">Was ich zuletzt gebaut habe. <em>Vieles davon offen</em> zum Lesen und Ausprobieren.</h2>
+        </header>
+        <!-- projects:start -->
+<ol class="cards" role="list">
+<li class="card card--wide" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">01</span> KI · Dokumente</p><svg class="card__glyph g-extract" viewBox="0 0 250 96" aria-hidden="true" focusable="false"><rect class="f-paper s-line2" x="0" y="6" width="66" height="84" rx="6"/><rect class="f-fg2" x="10" y="14" width="20" height="4" rx="2"/><rect class="f-ice ex q0" x="10" y="26" width="44" height="5" rx="2.5"/><rect class="f-fg3" x="10" y="26" width="44" height="5" rx="2.5" opacity=".35"/><g class="ex f0"><rect class="s-ice" x="116" y="21" width="86" height="15" rx="4" fill="none"/><rect class="f-fg" x="123" y="26" width="40" height="5" rx="2.5"/><circle class="f-ice" cx="194" cy="28.5" r="2.5"/></g><path class="s-ice ex w0" d="M58 28.5C84 28.5 88 28.5 112 28.5" fill="none" stroke-width="1.2" stroke-dasharray="60" pathLength="60"/><rect class="f-ice ex q1" x="10" y="44" width="36" height="5" rx="2.5"/><rect class="f-fg3" x="10" y="44" width="36" height="5" rx="2.5" opacity=".35"/><g class="ex f1"><rect class="s-ice" x="116" y="39" width="86" height="15" rx="4" fill="none"/><rect class="f-fg" x="123" y="44" width="52" height="5" rx="2.5"/><circle class="f-ice" cx="194" cy="46.5" r="2.5"/></g><path class="s-ice ex w1" d="M58 46.5C84 46.5 88 46.5 112 46.5" fill="none" stroke-width="1.2" stroke-dasharray="60" pathLength="60"/><rect class="f-ice ex q2" x="10" y="62" width="40" height="5" rx="2.5"/><rect class="f-fg3" x="10" y="62" width="40" height="5" rx="2.5" opacity=".35"/><g class="ex f2"><rect class="s-ice" x="116" y="57" width="86" height="15" rx="4" fill="none"/><rect class="f-fg" x="123" y="62" width="34" height="5" rx="2.5"/><circle class="f-ice" cx="194" cy="64.5" r="2.5"/></g><path class="s-ice ex w2" d="M58 64.5C84 64.5 88 64.5 112 64.5" fill="none" stroke-width="1.2" stroke-dasharray="60" pathLength="60"/><rect class="f-fg3" x="10" y="80" width="30" height="3" rx="1.5" opacity=".35"/><g class="ex ship"><rect class="s-line2" x="214" y="30" width="34" height="34" rx="8" fill="none"/><path class="s-ice" d="M223 47l5 5 10-11" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg><h3 class="card__title"><a class="card__main" href="https://github.com/Fluory/RequestFlow">RequestFlow</a></h3><p class="card__text">Liest Angebotsanfragen aus E-Mails und Anhängen aus. Ein Mensch prüft jede Angabe neben ihrer Fundstelle, danach geht die Anfrage einmal ans ERP.</p><p class="card__links meta"><span class="card__repo">Fluory/RequestFlow</span><a class="card__link" href="https://requestflow-doc-edit.vercel.app/case-study">Fallstudie<span aria-hidden="true"> ↗</span></a><a class="card__link" href="https://requestflow-doc-edit.vercel.app">Demo ohne Anmeldung<span aria-hidden="true"> ↗</span></a></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">02</span> Plugin · Claude Code</p><svg class="card__glyph g-sync" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><rect class="s-fg2" x="4" y="30" width="30" height="22" rx="4" fill="none" stroke-width="1.5"/><path class="s-fg2" d="M0 58h38" stroke-width="1.5" stroke-linecap="round"/><rect class="s-fg2" x="62" y="30" width="30" height="22" rx="4" fill="none" stroke-width="1.5"/><path class="s-fg2" d="M58 58h38" stroke-width="1.5" stroke-linecap="round"/><path class="s-line2" d="M38 41h20" stroke-dasharray="2 4" stroke-width="1.5" stroke-linecap="round"/><g class="ex"><circle class="f-ice pk" cx="38" cy="41" r="3.2"/></g><rect class="s-fg3" x="41" y="70" width="14" height="11" rx="2.5" fill="none" stroke-width="1.3"/><path class="s-fg3" d="M44 70v-3a4 4 0 0 1 8 0v3" fill="none" stroke-width="1.3"/><rect class="f-ice ex s1" x="9" y="35" width="20" height="3" rx="1.5"/><rect class="f-ice ex s2" x="67" y="35" width="20" height="3" rx="1.5"/></svg><h3 class="card__title"><a class="card__main" href="https://github.com/Fluory/claude-sync-kit">claude-sync-kit</a></h3><p class="card__text">Hält Einstellungen, Skills und Plugins von Claude Code auf mehreren Rechnern gleich. Läuft über ein privates Repo, der Login-Token wird nicht gespeichert.</p><p class="card__links meta"><span class="card__repo">Fluory/claude-sync-kit</span></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">03</span> Routine · Pixel-Insel</p><svg class="card__glyph g-tile" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><rect class="f-line2" x="8" y="8" width="2" height="2"/><rect class="f-line2" x="23" y="8" width="2" height="2"/><rect class="f-fg3" x="33" y="3" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg2" x="48" y="3" width="12" height="12" rx="2" opacity=".8"/><rect class="f-line2" x="68" y="8" width="2" height="2"/><rect class="f-line2" x="83" y="8" width="2" height="2"/><rect class="f-line2" x="8" y="23" width="2" height="2"/><rect class="f-fg3" x="18" y="18" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg2" x="33" y="18" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="48" y="18" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="63" y="18" width="12" height="12" rx="2" opacity=".8"/><rect class="f-line2" x="83" y="23" width="2" height="2"/><rect class="f-fg3" x="3" y="33" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg2" x="18" y="33" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="33" y="33" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="48" y="33" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg2" x="63" y="33" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="78" y="33" width="12" height="12" rx="2" opacity=".8"/><rect class="f-line2" x="8" y="53" width="2" height="2"/><rect class="f-fg3" x="18" y="48" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="33" y="48" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg2" x="48" y="48" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="63" y="48" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="78" y="48" width="12" height="12" rx="2" opacity=".8"/><rect class="f-line2" x="8" y="68" width="2" height="2"/><rect class="f-line2" x="23" y="68" width="2" height="2"/><rect class="f-fg2" x="33" y="63" width="12" height="12" rx="2" opacity=".8"/><rect class="f-fg3" x="48" y="63" width="12" height="12" rx="2" opacity=".8"/><rect class="f-ice ex nt" x="63" y="63" width="12" height="12" rx="2"/><rect class="s-ice" x="63" y="63" width="12" height="12" rx="2" fill="none" stroke-dasharray="2 2" opacity=".5"/><rect class="f-line2" x="83" y="68" width="2" height="2"/><rect class="f-line2" x="8" y="83" width="2" height="2"/><rect class="f-line2" x="23" y="83" width="2" height="2"/><rect class="f-line2" x="38" y="83" width="2" height="2"/><rect class="f-fg3" x="48" y="78" width="12" height="12" rx="2" opacity=".8"/><rect class="f-line2" x="68" y="83" width="2" height="2"/><rect class="f-line2" x="83" y="83" width="2" height="2"/></svg><h3 class="card__title"><a class="card__main" href="https://github.com/Fluory/one-tile-a-day">One Tile a Day</a></h3><p class="card__text">Eine Pixel-Insel, die jeden Tag um ein Feld wächst. Eine geplante KI-Routine wählt das Feld, Tests prüfen die Regeln vor dem Merge.</p><p class="card__links meta"><span class="card__repo">Fluory/one-tile-a-day</span><a class="card__link" href="https://one-tile-a-day.vercel.app">Live<span aria-hidden="true"> ↗</span></a></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">04</span> Issues · Sprites</p><svg class="card__glyph g-wish" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><rect class="f-gold ex p0" x="43" y="7" width="8" height="8"/><rect class="f-gold ex p1" x="43" y="16" width="8" height="8"/><rect class="f-gold ex p2" x="34" y="25" width="8" height="8"/><rect class="f-gold ex p3" x="43" y="25" width="8" height="8"/><rect class="f-gold ex p4" x="52" y="25" width="8" height="8"/><rect class="f-gold ex p5" x="7" y="34" width="8" height="8"/><rect class="f-gold ex p6" x="16" y="34" width="8" height="8"/><rect class="f-gold ex p7" x="25" y="34" width="8" height="8"/><rect class="f-gold ex p8" x="34" y="34" width="8" height="8"/><rect class="f-gold ex p9" x="43" y="34" width="8" height="8"/><rect class="f-gold ex p10" x="52" y="34" width="8" height="8"/><rect class="f-gold ex p11" x="61" y="34" width="8" height="8"/><rect class="f-gold ex p12" x="70" y="34" width="8" height="8"/><rect class="f-gold ex p13" x="79" y="34" width="8" height="8"/><rect class="f-ice ex p14" x="16" y="43" width="8" height="8"/><rect class="f-ice ex p15" x="25" y="43" width="8" height="8"/><rect class="f-ice ex p16" x="34" y="43" width="8" height="8"/><rect class="f-ice ex p17" x="43" y="43" width="8" height="8"/><rect class="f-ice ex p18" x="52" y="43" width="8" height="8"/><rect class="f-ice ex p19" x="61" y="43" width="8" height="8"/><rect class="f-ice ex p20" x="70" y="43" width="8" height="8"/><rect class="f-ice ex p21" x="25" y="52" width="8" height="8"/><rect class="f-ice ex p22" x="34" y="52" width="8" height="8"/><rect class="f-ice ex p23" x="43" y="52" width="8" height="8"/><rect class="f-ice ex p24" x="52" y="52" width="8" height="8"/><rect class="f-ice ex p25" x="61" y="52" width="8" height="8"/><rect class="f-ice ex p26" x="25" y="61" width="8" height="8"/><rect class="f-ice ex p27" x="34" y="61" width="8" height="8"/><rect class="f-ice ex p28" x="52" y="61" width="8" height="8"/><rect class="f-ice ex p29" x="61" y="61" width="8" height="8"/><rect class="f-ice ex p30" x="16" y="70" width="8" height="8"/><rect class="f-ice ex p31" x="25" y="70" width="8" height="8"/><rect class="f-ice ex p32" x="61" y="70" width="8" height="8"/><rect class="f-ice ex p33" x="70" y="70" width="8" height="8"/><rect class="f-ice ex p34" x="16" y="79" width="8" height="8"/><rect class="f-ice ex p35" x="70" y="79" width="8" height="8"/></svg><h3 class="card__title"><a class="card__main" href="https://github.com/Fluory/wished-into-being">Wished into Being</a></h3><p class="card__text">Jeder kann sich per Issue etwas wünschen. Der Wunsch mit den meisten Stimmen wird am nächsten Morgen als Pixelbild auf die Insel gesetzt.</p><p class="card__links meta"><span class="card__repo">Fluory/wished-into-being</span><a class="card__link" href="https://wished-into-being.vercel.app">Live<span aria-hidden="true"> ↗</span></a><a class="card__link" href="https://github.com/Fluory/wished-into-being/issues/new?template=wish.yml">Wunsch abgeben<span aria-hidden="true"> ↗</span></a></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">05</span> Wetter · L-Systeme</p><svg class="card__glyph g-grow" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path class="s-line2" d="M20 92h56" stroke-width="1.5" stroke-linecap="round"/><path class="s-fg2 ex br" d="M48 92V58 M48 74 L34 62 M48 66 L62 52 M48 58 L40 44 M48 58 L56 40 M34 62 L26 54 M62 52 L72 48 M40 44 L36 34 M56 40 L60 30" fill="none" stroke-width="2" stroke-linecap="round" pathLength="100" stroke-dasharray="100"/><circle class="f-ice ex lf l0" cx="26" cy="54" r="3.4"/><circle class="f-ice ex lf l1" cx="72" cy="48" r="3.4"/><circle class="f-ice ex lf l2" cx="36" cy="34" r="3.4"/><circle class="f-ice ex lf l3" cx="60" cy="30" r="3.4"/><path class="s-ice ex rn r0" d="M22 6v7" stroke-width="1.4" stroke-linecap="round"/><path class="s-ice ex rn r1" d="M46 6v7" stroke-width="1.4" stroke-linecap="round"/><path class="s-ice ex rn r2" d="M70 6v7" stroke-width="1.4" stroke-linecap="round"/><path class="s-ice ex rn r3" d="M84 6v7" stroke-width="1.4" stroke-linecap="round"/></svg><h3 class="card__title"><a class="card__main" href="https://github.com/Fluory/Grow">Grow</a></h3><p class="card__text">Ein Garten, der mit dem Wetter vom Vortag in Heilbronn wächst.</p><p class="card__links meta"><span class="card__repo">Fluory/Grow</span></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">06</span> Kennzahlen · Browser</p><svg class="card__glyph g-cockpit" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path class="s-line2" d="M4 90h88" stroke-width="1.5" stroke-linecap="round"/><rect class="f-line" x="8" y="20" width="12" height="66" rx="3" opacity=".55"/><rect class="f-fg3 ex b0" x="8" y="56" width="12" height="30" rx="3"/><rect class="f-line" x="28" y="20" width="12" height="66" rx="3" opacity=".55"/><rect class="f-fg3 ex b1" x="28" y="34" width="12" height="52" rx="3"/><rect class="f-line" x="48" y="20" width="12" height="66" rx="3" opacity=".55"/><rect class="f-fg3 ex b2" x="48" y="46" width="12" height="40" rx="3"/><rect class="f-line" x="68" y="20" width="12" height="66" rx="3" opacity=".55"/><rect class="f-ice ex b3" x="68" y="20" width="12" height="66" rx="3"/><path class="s-fg ex ln" d="M14 62 L34 44 L54 52 L74 24" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" pathLength="100" stroke-dasharray="100"/><circle class="f-fg ex dt" cx="74" cy="24" r="3.4"/></svg><h3 class="card__title"><span class="card__main">Betriebscockpit</span></h3><p class="card__text">Rechnet Kennzahlen und eine Prognose aus Excel- und CSV-Exporten. Läuft im Browser, die Dateien bleiben auf dem Rechner.</p><p class="card__links meta"><span class="card__repo">Repo bald öffentlich</span></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">07</span> Planung · Optimierer</p><svg class="card__glyph g-route" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><circle class="f-bg2 s-fg2" cx="12" cy="74" r="5" stroke-width="1.5"/><circle class="f-bg2 s-fg2" cx="30" cy="30" r="5" stroke-width="1.5"/><circle class="f-bg2 s-fg2" cx="58" cy="50" r="5" stroke-width="1.5"/><circle class="f-bg2 s-fg2" cx="84" cy="18" r="5" stroke-width="1.5"/><circle class="f-bg2 s-fg2" cx="80" cy="78" r="5" stroke-width="1.5"/><path class="s-ice ex rt" d="M12 74 L30 30 L58 50 L84 18 L80 78" fill="none" stroke-width="1.6" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-linecap="round"/><circle class="f-fg" cx="12" cy="74" r="2"/><circle class="f-fg" cx="30" cy="30" r="2"/><circle class="f-fg" cx="58" cy="50" r="2"/><circle class="f-fg" cx="84" cy="18" r="2"/><circle class="f-fg" cx="80" cy="78" r="2"/><g class="ex"><rect class="f-ice van" x="-5" y="-4" width="10" height="8" rx="2.5"/></g></svg><h3 class="card__title"><span class="card__main">Tourenplaner</span></h3><p class="card__text">Plant die Woche für Monteure mit Zeitfenstern. Der Optimierer läuft im Browser.</p><p class="card__links meta"><span class="card__repo">Repo bald öffentlich</span></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">08</span> Automation · E-Rechnung</p><svg class="card__glyph g-invoice" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><rect class="f-paper s-line2" x="12" y="6" width="62" height="80" rx="6"/><rect class="f-fg2" x="22" y="15" width="22" height="4" rx="2"/><rect class="f-fg3" x="22" y="30" width="30" height="4" rx="2" opacity=".6"/><g class="ex ck0"><circle class="s-ice" cx="61" cy="32" r="5.5" fill="none" stroke-width="1.4"/><path class="s-ice" d="M58.4 32l1.8 1.8 3.6-3.8" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g><rect class="f-fg3" x="22" y="46" width="24" height="4" rx="2" opacity=".6"/><g class="ex ck1"><circle class="s-ice" cx="61" cy="48" r="5.5" fill="none" stroke-width="1.4"/><path class="s-ice" d="M58.4 48l1.8 1.8 3.6-3.8" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g><rect class="f-fg3" x="22" y="62" width="28" height="4" rx="2" opacity=".6"/><g class="ex ck2"><circle class="s-ice" cx="61" cy="64" r="5.5" fill="none" stroke-width="1.4"/><path class="s-ice" d="M58.4 64l1.8 1.8 3.6-3.8" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g><path class="s-line2" d="M22 76h20" stroke-width="1.5" stroke-linecap="round"/><path class="s-fg ex iv" d="M66 76h24m-6-6 6 6-6 6" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100"/></svg><h3 class="card__title"><span class="card__main">Rechnungseingang</span></h3><p class="card__text">Liest E-Rechnungen (XRechnung, ZUGFeRD), prüft sie und gleicht sie mit der Bestellung ab.</p><p class="card__links meta"><span class="card__repo">Repo bald öffentlich</span></p></article></li>
+<li class="card" data-reveal><article class="card__inner"><p class="card__meta meta"><span class="meta__n">09</span> Pipeline · ML</p><svg class="card__glyph g-forecast" viewBox="0 0 96 96" aria-hidden="true" focusable="false"><path class="s-line2" d="M4 88h88" stroke-width="1.5" stroke-linecap="round"/><path class="s-line2" d="M52 14v74" stroke-width="1.2" stroke-dasharray="2 3"/><g class="ex fb"><path class="f-ice" d="M52 48 L60 34 L68 40 L76 26 L84 30 L90 20 L90 52 L84 58 L76 50 L68 60 L60 50 Z" opacity=".22"/></g><path class="s-fg2" d="M6 62 L14 54 L22 60 L30 46 L38 52 L46 40 L52 48" fill="none" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><path class="s-ice ex fl" d="M52 48 L60 42 L68 50 L76 38 L84 44 L90 36" fill="none" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" pathLength="100" stroke-dasharray="100"/><circle class="f-fg" cx="52" cy="48" r="3"/></svg><h3 class="card__title"><span class="card__main">Stromlast-Prognose</span></h3><p class="card__text">Sagt täglich die deutsche Netzlast für den Folgetag voraus und vergleicht sich im Rückblick mit der offiziellen Prognose.</p><p class="card__links meta"><span class="card__repo">Repo bald öffentlich</span></p></article></li>
+</ol>
+<!-- projects:end -->
+      </div>
+    </section>
+
+    <section class="section" id="arbeitsweise" aria-labelledby="arbeitsweise-title">
+      <div class="wrap">
+        <header class="section__head" data-reveal>
+          <p class="meta"><span class="meta__n">03</span> Wie ich arbeite</p>
+          <h2 id="arbeitsweise-title">Drei Regeln, <em>an die ich mich halte.</em></h2>
+        </header>
+        <ol class="steps" role="list">
+          <li class="step" data-reveal>
+            <span class="step__n" aria-hidden="true">1</span>
+            <h3 class="step__title">Klein anfangen</h3>
+            <p>Erst klein und an echten Beispielen testen, dann ausbauen.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__n" aria-hidden="true">2</span>
+            <h3 class="step__title">Belegt statt behauptet</h3>
+            <p>Keine KI-Ausgabe ohne Beleg und Prüfung, keine Änderung ohne Tests und grüne CI.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__n" aria-hidden="true">3</span>
+            <h3 class="step__title">Datenschutz von Anfang an</h3>
+            <p>Daten in der EU, AV-Vertrag, nur was nötig ist.</p>
+          </li>
+        </ol>
+        <p class="stack" data-reveal><span class="meta">Werkzeuge</span> TypeScript · Next.js · React Native/Expo · Node · Python/FastAPI · PostgreSQL · Supabase · LLM-Anwendungen mit Belegen und Evals · Docker · CI/CD · Vercel und eigene Server</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="wrap contact__grid">
+        <p class="meta" data-reveal><span class="meta__n">04</span> Kontakt</p>
+        <h2 class="contact__title" id="kontakt-title" data-reveal>Was frisst bei Ihnen <em>jede Woche Zeit?</em></h2>
+        <div class="contact__body" data-reveal>
+          <p>Schreiben Sie mir über das Formular auf meiner Website. Ich melde mich mit einer Einschätzung, ob und wie sich ein Prototyp lohnt.</p>
+          <p class="actions">
+            <a class="btn" href="https://final-portfolio-website-ten.vercel.app/de/#contact">Zum Anfrageformular<span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="https://final-portfolio-website-ten.vercel.app/de/">Zur Website</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <p class="meta">© 2026 Florian Hein · Diese Seite lädt nichts von Dritten.</p>
+      <ul class="foot__links meta" role="list">
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="https://github.com/Fluory">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

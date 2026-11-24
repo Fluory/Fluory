@@ -1,0 +1,114 @@
+{
+  "_comment": "Single source for the project list. After editing run: python3 tools/build.py (needs: pip install fonttools brotli). It rewrites assets/card-*.svg and the marked blocks in README.md and docs/index.html; python3 tools/build.py --check only reports whether they are up to date. \"pending\": the repo is not public yet - the text is shown on the card and nothing links to the repo.",
+  "projects": [
+    {
+      "id": "requestflow",
+      "title": "RequestFlow",
+      "label": "KI · Dokumente",
+      "line": "Liest Angebotsanfragen aus E-Mails und Anhängen aus. Ein Mensch prüft jede Angabe neben ihrer Fundstelle, danach geht die Anfrage einmal ans ERP.",
+      "repo": "https://github.com/Fluory/RequestFlow",
+      "links": [
+        [
+          "Fallstudie",
+          "https://requestflow-doc-edit.vercel.app/case-study"
+        ],
+        [
+          "Demo ohne Anmeldung",
+          "https://requestflow-doc-edit.vercel.app"
+        ]
+      ],
+      "glyph": "extract",
+      "featured": true
+    },
+    {
+      "id": "claude-sync-kit",
+      "title": "claude-sync-kit",
+      "label": "Plugin · Claude Code",
+      "line": "Hält Einstellungen, Skills und Plugins von Claude Code auf mehreren Rechnern gleich. Läuft über ein privates Repo, der Login-Token wird nicht gespeichert.",
+      "repo": "https://github.com/Fluory/claude-sync-kit",
+      "links": [],
+      "glyph": "sync"
+    },
+    {
+      "id": "one-tile-a-day",
+      "title": "One Tile a Day",
+      "label": "Routine · Pixel-Insel",
+      "line": "Eine Pixel-Insel, die jeden Tag um ein Feld wächst. Eine geplante KI-Routine wählt das Feld, Tests prüfen die Regeln vor dem Merge.",
+      "repo": "https://github.com/Fluory/one-tile-a-day",
+      "links": [
+        [
+          "Live",
+          "https://one-tile-a-day.vercel.app"
+        ]
+      ],
+      "glyph": "tile"
+    },
+    {
+      "id": "wished-into-being",
+      "title": "Wished into Being",
+      "label": "Issues · Sprites",
+      "line": "Jeder kann sich per Issue etwas wünschen. Der Wunsch mit den meisten Stimmen wird am nächsten Morgen als Pixelbild auf die Insel gesetzt.",
+      "repo": "https://github.com/Fluory/wished-into-being",
+      "links": [
+        [
+          "Live",
+          "https://wished-into-being.vercel.app"
+        ],
+        [
+          "Wunsch abgeben",
+          "https://github.com/Fluory/wished-into-being/issues/new?template=wish.yml"
+        ]
+      ],
+      "glyph": "wish"
+    },
+    {
+      "id": "grow",
+      "title": "Grow",
+      "label": "Wetter · L-Systeme",
+      "line": "Ein Garten, der mit dem Wetter vom Vortag in Heilbronn wächst.",
+      "repo": "https://github.com/Fluory/Grow",
+      "links": [],
+      "glyph": "grow"
+    },
+    {
+      "id": "betriebscockpit",
+      "title": "Betriebscockpit",
+      "label": "Kennzahlen · Browser",
+      "line": "Rechnet Kennzahlen und eine Prognose aus Excel- und CSV-Exporten. Läuft im Browser, die Dateien bleiben auf dem Rechner.",
+      "repo": "https://github.com/Fluory/Betriebscockpit",
+      "links": [],
+      "glyph": "cockpit",
+      "pending": "Repo bald öffentlich"
+    },
+    {
+      "id": "tourenplaner",
+      "title": "Tourenplaner",
+      "label": "Planung · Optimierer",
+      "line": "Plant die Woche für Monteure mit Zeitfenstern. Der Optimierer läuft im Browser.",
+      "repo": "https://github.com/Fluory/Tourenplaner",
+      "links": [],
+      "glyph": "route",
+      "pending": "Repo bald öffentlich"
+    },
+    {
+      "id": "rechnungseingang",
+      "title": "Rechnungseingang",
+      "label": "Automation · E-Rechnung",
+      "line": "Liest E-Rechnungen (XRechnung, ZUGFeRD), prüft sie und gleicht sie mit der Bestellung ab.",
+      "repo": "https://github.com/Fluory/Rechnungseingang-OS",
+      "links": [],
+      "glyph": "invoice",
+      "pending": "Repo bald öffentlich"
+    },
+    {
+      "id": "stromlast",
+      "title": "Stromlast-Prognose",
+      "label": "Pipeline · ML",
+      "line": "Sagt täglich die deutsche Netzlast für den Folgetag voraus und vergleicht sich im Rückblick mit der offiziellen Prognose.",
+      "repo": "https://github.com/Fluory/Stromlast-Prognose",
+      "links": [],
+      "glyph": "forecast",
+      "pending": "Repo bald öffentlich"
+    }
+  ]
+}
