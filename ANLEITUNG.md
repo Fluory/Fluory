@@ -41,8 +41,9 @@ auf `fluory.github.io` setzen. GitHub legt dann `docs/CNAME` an. Impressum und D
   ```
   Das erzeugt die Karten-SVGs neu und schreibt die Projektblöcke in `README.md` und `docs/index.html`
   (zwischen `<!-- projects:start -->` und `<!-- projects:end -->` – dort nicht von Hand ändern).
-- **Betriebscockpit, Tourenplaner, Rechnungseingang, Stromlast-Prognose** liegen im noch privaten Repo
-  `Fluory/handwerk`. In `projects.json` tragen sie `"pending": "Repo bald öffentlich"`: Die Karte zeigt diesen Hinweis,
+- **Betriebscockpit, Tourenplaner, Rechnungseingang, Stromlast-Prognose** haben eigene, noch private Repos
+  (`Fluory/Betriebscockpit`, `Fluory/Tourenplaner`, `Fluory/Rechnungseingang-OS`, `Fluory/Stromlast-Prognose`).
+  In `projects.json` tragen sie `"pending": "Repo bald öffentlich"`: Die Karte zeigt diesen Hinweis,
   und nichts verlinkt auf das Repo (sonst landen Besucher auf einer 404-Seite). Nach dem Veröffentlichen die
   `pending`-Zeilen löschen, ggf. Demo-Links ergänzen und `python3 tools/build.py` ausführen.
 - **Bewegung in den README-Grafiken** endet von selbst: jede Animation läuft 1,8-mal (rund 20 s) und bleibt dann
